@@ -1,0 +1,406 @@
+body {
+  background-image: url(/img/background.png);
+  position: static;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 40px;
+  box-shadow: 0 0 6px rgb(30, 32, 166);
+}
+
+/*PARA LAS POSICIONES*/
+.logo {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  display: inline-block;
+}
+
+.nombre {
+  position: relative;
+  left: 230px;
+  bottom: 30px;
+  display: inline-block;
+}
+
+.navegacion {
+  position: relative;
+  left: 350px;
+  bottom: 30px;
+  display: inline-block;
+}
+
+.navegacion {
+  font-size: 20px;
+}
+
+.navegacion ul a {
+  text-decoration: none;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.menu-p>li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-p>li>a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+}
+
+.menu-p li a:hover {
+  background: rgb(90, 136, 138);
+  transition: all .3s;
+}
+
+/*submenu*/
+
+.submenuc {
+  position: absolute;
+  right: 10px;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenuc li a {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+}
+
+.menu-p li:hover .submenuc {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*para los titulos*/
+#t2 {
+  color: rgb(187, 186, 113);
+  font-family: 'Junge';
+  font-style: normal;
+  align-items: center;
+  letter-spacing: 1em;
+  text-align: center;
+  font-size: 15px;
+}
+
+#t1 {
+  color: rgb(187, 186, 113);
+  font-family: 'Junge';
+  font-style: normal;
+  letter-spacing: 0.5em;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.bodi {
+  position: relative;
+  top: 200px;
+  left: 70px;
+
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  height: 50vh;
+  width: 10%;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h4,
+small,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Junge';
+}
+
+
+a {
+  text-decoration: none;
+}
+/*PARA EL CARRUSEL*/
+.carusel {
+  width: 100%;
+  margin: 0px 0px;
+  position: relative;
+  bottom: 150px;
+}
+
+@media(min-width:768px) {
+  .carousel {
+    margin: 0px 60px;
+  }
+}
+
+.carusel h2 {
+  font-size: 25px;
+  line-height: 38px;
+  padding-bottom: 20px;
+  opacity: .9;
+  text-transform: uppercase;
+  font-weight: 600px;
+  text-align: left;
+  font-family: 'Junge';
+  color: white;
+}
+
+.carrusel-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.carrusel-track {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  transition: .5 ease-in-out;
+}
+
+.carrusel {
+  position: relative;
+  width: 210px;
+  padding: 0px 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.carrusel h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: white;
+  padding: 15px;
+}
+
+.carrusel h4 small {
+  font-size: 15px;
+  display: block;
+}
+
+.carrusel a img {
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: .3s ease-in-out;
+}
+
+@media(min-width:768px) {
+  .carrusel {
+    width: 275px;
+  }
+
+  .carrusel a img {
+    width: 250px;
+  }
+}
+
+.carrusel-arrow {
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+  outline: 0;
+}
+
+.carrusel-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+  left: 0px;
+}
+
+.carrusel-next {
+  right: 0px;
+}
+
+/*para el footer*/
+
+.contactos {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(155, 73, 172, 0.233);
+}
+
+.c {
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  padding: 10px 60px;
+  margin: 20px 50px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-right: 60px;
+
+}
+.contac{
+  font-size: 30px;
+}
+.imgc {
+  width: 80px;
+  height: 80px;
+
+}
+
+.c:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.c:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.c:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+.c span {
+  position: absolute;
+  display: block;
+}
+
+.c span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.c span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.c span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.c span:nth-child(4) {
+  bottom: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.map {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.mapa {
+  display: inline;
+  position: relative;
+  right: 80px;
+  float: right;
+}

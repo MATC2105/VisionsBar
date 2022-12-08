@@ -1,0 +1,401 @@
+
+body{
+    background-image: url(/img/backgroundres.png);
+    position:static;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+  }
+  
+  /*PARA EL MENU DESPLEGABLE*/
+  .hamburger{
+  position: fixed;
+  top: 25px;
+  left: 75px;
+  background-color: transparent;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(185, 49, 187, 0.8);
+  }
+  
+  .send{
+    display: inline;
+    position:fixed;
+    float: right;
+    right: 50px;
+  }
+  #env{
+    position: relative;
+    right: 20px;
+    font-size: 25px;
+  }
+  .send .enviar{
+    width: 50px;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+  }
+
+  .navegacionp:hover .men{
+  display: block;
+  }
+  
+  .men{
+  position: fixed;
+  width: 12vw;
+  height: 30%;
+  display: none;
+  justify-content: space-evenly;
+  transition: transform .3 ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .men  a{
+  position: relative;
+  text-align: center;
+  top: 100px;
+  right: 12px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Georama';
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1em;
+  mix-blend-mode: luminosity;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .men ul {
+  list-style: none;
+  text-align: center;
+  }
+  /*AQUI TERMINA EL MENU*/
+
+/*para los titulos*/
+.nombre{
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    left: 500px;
+    background: none;
+    }
+    
+    #t1{
+    background: none;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: 1em;
+    mix-blend-mode: luminosity;
+    color: rgb(187, 186, 113);
+    text-shadow: 0px 4px 4px rgb(213,124,236);
+    }
+    
+    #t2{
+    background: none;
+    text-shadow: 0px 4px 4px rgb(213,124,236);
+    color: rgb(187, 186, 113);
+    font-family: 'Junge';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1em;
+    }
+    
+    .logo{
+    border-radius: 48%;
+    width: 150px;
+    height: 150px;
+    }
+    
+    .div-logo{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 680px;
+    }
+
+/*contador*/
+.cont{
+    display: inline-block;
+    position: relative;
+    top: 250px;
+    left: 50px;     
+}
+#h2{
+    font-size: 50px;
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    font-family: 'Georama';
+    color: aliceblue;
+}
+#h3{
+    font-size: 50px;
+    display: inline-block;
+    position: relative;
+    right: 45px;
+    bottom: 45px;
+    font-family: 'Georama';
+    color: aliceblue;
+}
+.contenedor{
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    width: 485px;
+    height: 50px;
+    color: white;
+    flex-direction:row;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.contar{
+    display: inline-block;
+    font-size: 3rem;
+    position: relative;
+    left: 70px;
+    color: black;
+    bottom: 50px;
+}
+
+.botones{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    left: 100px;
+    bottom: 58px;
+}
+
+button{
+    margin: 5px 8px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: white;
+    border:none;
+    border-radius: 5px;
+}
+
+span{
+    color:#ef4b4c;
+}
+
+.reset{
+    width: 90px;
+    height: 25px;
+}
+
+/*furmulario date*/
+.formulario-date{
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 30px;
+    font-size: 50px;
+}
+.form-date input{
+    width: 620px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+/*para el formulario hora*/
+.formulario-hora{
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 30px;
+    font-size: 50px;
+
+}
+.form-hora input{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+/*para el formulario comentario*/
+
+.formulario-comentario{
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 30px;
+    font-size: 50px;
+
+}
+.form-text input{
+    width: 750px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+ /*para el footer*/
+ .contactos {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(155, 73, 172, 0.233);
+}
+
+.c {
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  padding: 10px 60px;
+  margin: 20px 50px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-right: 60px;
+
+}
+.contac{
+  font-size: 30px;
+}
+.imgc {
+  width: 80px;
+  height: 80px;
+
+}
+
+.c:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.c:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.c:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+.c span {
+  position: absolute;
+  display: block;
+}
+
+.c span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.c span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.c span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.c span:nth-child(4) {
+  bottom: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.map {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.mapa {
+  display: inline;
+  position: relative;
+  right: 80px;
+  float: right;
+}

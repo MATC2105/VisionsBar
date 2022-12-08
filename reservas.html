@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>RESERVAS</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="send">
+            <h3 id="env">ENVIAR</h3>
+            <a href="/download/reserva.pdf"><img src="/img/imginicio/bx-send.svg" alt="" class="enviar"></a>
+        </div>
+
+        <nav class="navegacionp">
+
+            <div class="hamburger">
+                <img src="/img/bx-food-menu.svg" class="hamburger">
+            </div>
+            <div class="men">
+                <ul>
+                    <li><a href="/index.html">INICIO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--PARA EL LOGO Y EL NOMBRE-->
+        <div class="nombre">
+            <h1 id="t1">VISIONS BAR</h1>
+            <h2 id="t2">PREMIUM - ALCOHOL</h2>
+        </div>
+        <div class="div-logo">
+            <img src="/img/L.jpg" alt="" class="logo">
+        </div>
+        <!--AQUI TERMINA PARA EL LOGO Y NOMBRE-->
+    </header>
+
+    <!--para el formulario date-->
+    <div class="formulario-date">
+        <div class="form-date">
+            <label for="start">
+                <h2 id="h2">DATE: </h2>
+            </label>
+            <input type="date" id="start" value="2022-01-01" min="2022/01/01" max="2022-12-31">
+        </div>
+    </div>
+
+    <!--para el contador de personas-->
+    <div class="cont">
+        <h2 id="h3">PERSONAS: </h2>
+        <div class="contenedor">
+            <p class="contar" id="contar">0</p>
+
+            <div class="botones">
+                <button class="incr" id="incr"><span class="material-icons-round"><img src="/img/icons/bx-up-arrow-alt.svg" alt=""></span></button>
+                <button class="decr" id="decr"><span class="material-icons-round"><img src="/img/icons/bx-down-arrow-alt.svg" alt=""></span></button>
+                <button class="reset" id="reset"><span class="material-icons-round"><img src="/img/icons/bxs-eraser.svg" alt=""></span></button>
+            </div>
+        </div>
+    </div>
+
+    <!--para el formulario hora-->
+    <div class="formulario-hora">
+        <div class="form-hora">
+            <label for="start">
+                <h2 id="h2">HORA: </h2>
+            </label>
+            <input type="time" id="start" value="18:00" min="18:00" max="02:00">
+        </div>
+    </div>
+
+    <!--para los comentarios-->
+    <div class="formulario-comentario">
+        <div class="form-text">
+            <label for="start">
+                <h2 id="h2">COMENTARIO (OPCIONAL):</h2>
+            </label>
+            <br>
+            <input type="text">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="contactos">
+        <h3 class="contac">CONTACTOS</h3>
+        <a href="#" class="c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <img class="imgc" src="/img/icons/bxl-whatsapp.svg" alt="">
+        </a>
+        <a href="" class="c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <img class="imgc" src="/img/icons/bxl-instagram.svg" alt="">
+        </a>
+        <a href="" class="c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <img class="imgc" src="/img/icons/bxl-facebook.svg" alt="">
+        </a>
+        <div class="mapa">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.750814254937!2d-78.4766916939767!3d-0.3332983424009144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bd31b1049d07%3A0x988c6394a5d05d4!2sParque%20de%20Fajardo!5e0!3m2!1ses-419!2sec!4v1670447942937!5m2!1ses-419!2sec"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="/js/scriptres.js"></script>
+</body>
+
+</html>
